@@ -30,7 +30,6 @@ class Perro extends Animal {
   // Constructor
   Perro(this.edad);
 
-  // Implementación del método comer
   @override
   void comer() {
     if (edad > 0) {
