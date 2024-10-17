@@ -1,9 +1,9 @@
 
 
 void main() {
-  // Ejemplo correcto
-  var perro = Perro(-9); // Perro con 3 años de edad
-  perro.comer(); // Llamada al método comer
+  
+  var perro = Perro(-9); 
+  perro.comer(); 
 
   
 }
@@ -11,18 +11,17 @@ void main() {
 
 // Clase abstracta Animal
 abstract class Animal {
-  void comer(); // Método abstracto
+  void comer(); 
 }
 
 // Subclase Perro que implementa la clase Animal
 class Perro extends Animal {
   int edad;
 
-  // Constructor con aserción
-  // Constructor
+ 
   Perro(this.edad);
 
-  // Implementación del método comer
+ 
   @override
   void comer() {
     if (edad > 0) {
